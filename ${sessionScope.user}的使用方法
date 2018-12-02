@@ -1,0 +1,15 @@
+EL 全名为Expression Language
+
+EL 语法很简单，它最大的特点就是使用上很方便。接下来介绍EL主要的语法结构：
+
+${sessionScope.user.sex}
+
+所有EL都是以${为起始、以}为结尾的。上述EL范例的意思是：从Session的范围中，取得
+
+用户的性别。假若依照之前JSP Scriptlet的写法如下：
+
+User user = (User)session.getAttribute("user");
+
+String sex = user.getSex( );
+
+两者相比较之下，可以发现EL 的语法比传统JSP Scriptlet 更为方便、简洁。
